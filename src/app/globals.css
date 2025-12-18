@@ -24,3 +24,113 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/*Style for Nav bar*/
+.nav-bar {
+  position: relative;
+  background-color: #333;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; 
+  min-height: 10vh;
+  height: auto;
+  padding: 0 1vh;
+  box-sizing: border-box;
+  font-size: 2.5vh;
+}
+/* Text color and weight for title */
+.page-title {
+  color: #FFF;
+  margin: 0; 
+  font-weight: bold;
+}
+/* Styling for all elements within nav bar */
+.nav-elements {
+  list-style: none; 
+  padding: 0;
+  display: flex;
+  gap: 1vw;
+  margin-left: auto; 
+}
+.nav-item {
+  display: flex;
+  align-items: center; 
+}
+/* Styling for links in nav bar */
+.nav-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+}
+/* Hover effect for links/linkedIn logo */
+.nav-link:hover {
+  opacity: 80%;
+  border-radius: .05vh;
+}
+
+
+/* Hide the menu button on larger screen*/
+.menu-bar {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2vh;
+  cursor: pointer;
+}
+.menu-bar-img{
+    width: 5vh;
+    height: 5vh; 
+    display: block;
+    margin-top: 0;
+}
+/*Display for small screens*/
+@media (max-width: 650px) {
+  /* Show menu button, hide nav links initially */
+  .menu-bar { display: block; margin-left: auto; }
+  .nav-elements { 
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 75%;   /* just below navbar */
+    left: 0vw;
+    width: 100%; 
+    height: auto;
+    max-height: 0;
+    overflow: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: max-height 0.5s ease, opacity 0.3s ease;
+  }
+  .nav-elements.open { 
+    max-height: 80vh;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+}
+
+/* Styling for footer */
+.page-footer {
+  background: #999;
+  display: flex;
+  justify-content: center;
+}
+
+.page-main {
+  flex: 1;
+}
+
+/* Styling for body */
+.page-body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}

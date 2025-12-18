@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -19,7 +20,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="page-body">
+        <nav className="nav-bar">
+          <p className = "page-title">Gameboxd</p>
+            {/* <!-- Included Links --> */}
+            <ul className = "nav-elements">
+                <li className="nav-item"><Link className = "nav-link" href = "/"><p>Home</p></Link></li>
+                <li className="nav-item"><Link className = "nav-link" href = "/about"><p>About</p></Link></li>
+            </ul>
+            {/* <!-- Menu Bar Button -->
+            <button class="menu-bar" aria-label="Menu">
+                <img class = "menu-bar-img" src = "../static/main/images/menu-bar.png" alt = "Menu bar image" loading = "lazy">
+            </button> */}
+        </nav>
+
+        <main className="page-main">{children}</main>
+
+        <footer className="page-footer">© GameBoxd</footer>
+      </body>
     </html>
   );
 }
