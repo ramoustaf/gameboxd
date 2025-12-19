@@ -10,7 +10,15 @@ export default function Navbar() {
   return (
     <nav className="nav-bar">
       <Link className="nav-link" href="/">
-        <p className="page-title">Gameboxd</p>
+        <Image
+          src="/images/GameboxdLogo.png"   // put this in /public
+          alt="Gameboxd logo"
+          width={32}
+          height={32}
+          className="nav-logo"
+          priority
+        />
+        <span className="page-title">Gameboxd</span>
       </Link>
 
       <ul className={`nav-elements ${open ? "open" : ""}`}>

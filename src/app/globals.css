@@ -70,13 +70,16 @@ body {
   color: #FFF;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 /* Hover effect for links/linkedIn logo */
 .nav-link:hover {
   opacity: 80%;
   border-radius: .05vh;
 }
-
+.nav-logo {
+  object-fit: contain;
+}
 
 /* Hide the menu button on larger screen*/
 .menu-bar {
