@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "./components/Navbar";
+import Banner from "./components/Banner"
 
 export const metadata: Metadata = {
   title: "Gameboxd",
@@ -19,6 +20,7 @@ export default function RootLayout({
         <title>Gameboxd</title>
       </head>
       <body className="page-body">
+        <Banner />
         <Navbar />
         <main className="page-main">{children}</main>
 
