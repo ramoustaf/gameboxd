@@ -5,30 +5,7 @@ export default function Home() {
       <p className={styles.title}>Welcome to Gameboxd</p>
       <p>Play. Rate. Share. Discover.</p>
       <p>The social network for gamers</p>
-      <p className={styles.title}>Welcome to Gameboxd</p>
-      <p>Play. Rate. Share. Discover.</p>
-      <p>The social network for gamers</p>
-      <p className={styles.title}>Welcome to Gameboxd</p>
-      <p>Play. Rate. Share. Discover.</p>
-      <p>The social network for gamers</p>
-      <p className={styles.title}>Welcome to Gameboxd</p>
-      <p>Play. Rate. Share. Discover.</p>
-      <p>The social network for gamers</p>
-      <p className={styles.title}>Welcome to Gameboxd</p>
-      <p>Play. Rate. Share. Discover.</p>
-      <p>The social network for gamers</p>
-      <p className={styles.title}>Welcome to Gameboxd</p>
-      <p>Play. Rate. Share. Discover.</p>
-      <p>The social network for gamers</p>
-      <p className={styles.title}>Welcome to Gameboxd</p>
-      <p>Play. Rate. Share. Discover.</p>
-      <p>The social network for gamers</p>
-      <p className={styles.title}>Welcome to Gameboxd</p>
-      <p>Play. Rate. Share. Discover.</p>
-      <p>The social network for gamers</p>
-      <p className={styles.title}>Welcome to Gameboxd</p>
-      <p>Play. Rate. Share. Discover.</p>
-      <p>The social network for gamers</p>
+      
     </div>
   );
 }

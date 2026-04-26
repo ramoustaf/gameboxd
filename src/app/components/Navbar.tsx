@@ -22,8 +22,8 @@ export default function Navbar() {
       </Link>
 
       <ul className={`nav-elements ${open ? "open" : ""}`}>
-        <li className="nav-item"><Link className = "nav-link" href = "/"><p>Sign In</p></Link></li>
-        <li className="nav-item"><Link className = "nav-link" href = "/"><p>Create Account</p></Link></li>
+        <li className="nav-item"><Link className = "nav-link" href = "/login"><p>Sign In</p></Link></li>
+        <li className="nav-item"><Link className = "nav-link" href = "/signup"><p>Create Account</p></Link></li>
         <li className="nav-item"><Link className = "nav-link" href = "/about"><p>About</p></Link></li>
         <li className="nav-item"><Link className = "nav-link" href = "/"><p>Games</p></Link></li>
       </ul>
